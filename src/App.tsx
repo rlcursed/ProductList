@@ -1,15 +1,13 @@
 import React from 'react';
 
-import ProductCard from './components/ProductCard';
-
-import { productListData } from './data/ProductData';
+import ProductListContainer from './components/ProductListContainer';
 
 import { GlobalContainer } from './components/Styles';
 
 function App() {
   return (
     <GlobalContainer>
-      <ProductCard {...productListData[0]} />
+      <ProductListContainer />
     </GlobalContainer>
   );
 }

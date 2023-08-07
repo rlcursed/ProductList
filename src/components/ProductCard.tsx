@@ -1,5 +1,6 @@
 import React, {memo, FC} from "react";
 import { ProductModel } from "../models/ProductModel";
+import Description from "./Description";
 
 import { CardContainer, ResizeContainer, ImageDiv, ResizeTwoContainer } from "./Styles";
 
@@ -18,7 +19,8 @@ const ProductCard: FC<ProductCardProps> = ({title, price, description, image}) =
                 {title}
             </ResizeTwoContainer>
             <ResizeTwoContainer>
-                {description}
+                <Description
+                text={description} />
             </ResizeTwoContainer>
         </CardContainer>
     )

@@ -4,22 +4,23 @@ export const GlobalContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100vh;
 `
 
 export const CardContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 400px;
-    height: 400px;
+    color: rgba(30, 144, 255);
+    border: 1px rgba(30, 144, 255) solid;
+    width: 370px;
+    height: 370px;
     flex-direction: column;
-    border: 2px black solid;
-    border-radius: 20px;
+    border-radius: 10px;
     font-family: 'Roboto';
     font-weight: bold;
-    gap: 50px;
+    font-size: 12px;
+    overflow: hidden;
+    gap: 20px;
 `
 
 export const ResizeContainer = styled.div`
@@ -31,8 +32,8 @@ export const ResizeContainer = styled.div`
 `
 
 export const ImageDiv = styled.img`
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
 `
 
 export const ResizeTwoContainer = styled.div`
@@ -43,4 +44,20 @@ export const ResizeTwoContainer = styled.div`
     width: 350px;
     gap: 20px;
     text-align: center;
+`
+
+export const GridContainer = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    height: 100vh;
+    width: 100%;
+`
+
+export const LoadingContainer = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    font-weight: bold;
 `
